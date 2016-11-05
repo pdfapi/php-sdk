@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/pdfapi/php-sdk.svg?branch=master)](https://travis-ci.org/pdfapi/php-sdk)
+[![Coverage Status](https://coveralls.io/repos/github/pdfapi/php-sdk/badge.svg?branch=master)](https://coveralls.io/github/pdfapi/php-sdk?branch=master)
 
 # pdfapi.io SDK for PHP
 
