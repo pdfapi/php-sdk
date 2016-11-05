@@ -1,0 +1,33 @@
+{
+  "name": "pdfapi/php-sdk",
+  "description": "pdfapi.io enables HTML pages that can congtain CSS and JavaScripts to generate beautiful PDF via API",
+  "keywords": ["pdfapi.io", "sdk", "php"],
+  "type": "library",
+  "homepage": "https://github.com/pdfapi/php-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tõnis Tobre",
+      "email": "tobre@pdfapi.io"
+    }
+  ],
+  "require": {
+    "php": "^5.6|^7.0",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0",
+    "mockery/mockery": "~0.9",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PdfApi\\": "src/PdfApi/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PdfApi\\Tests\\": "tests/"
+    }
+  }
+}
