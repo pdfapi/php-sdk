@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pdfapi/php-sdk.svg?branch=master)](https://travis-ci.org/pdfapi/php-sdk)
+
 # pdfapi.io SDK for PHP
 
 ## Installation
