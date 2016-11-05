@@ -32,7 +32,7 @@ HTML;
 $pdfApi = new PdfApi('YOUR_API_KEY');
 $pdfApi->setHtml($template);
 
-$rawPdf = $pdfApi->covert();
+$rawPdf = $pdfApi->generate();
 ```
 
 Full example of the usage:
