@@ -2,9 +2,9 @@
 
 namespace PdfApi;
 use PdfApi\Exception\InvalidParameterValueException;
+use PdfApi\Parameter\Enum\Orientation;
+use PdfApi\Parameter\Enum\Size;
 use PdfApi\Parameter\Margin;
-use PdfApi\Parameter\OrientationEnum;
-use PdfApi\Parameter\SizeEnum;
 
 /**
  * Created by IntelliJ IDEA.
@@ -128,7 +128,7 @@ class Parameters
      */
     public function setSize($size)
     {
-        if (!defined(SizeEnum::class . '::' . $size)) {
+        if (!defined(Size::class . '::' . $size)) {
             throw new InvalidParameterValueException('Size ' . $size . ' does not exists.');
         }
         $this->size = $size;
@@ -147,7 +147,7 @@ class Parameters
      */
     public function setOrientation($orientation)
     {
-        if (!defined(OrientationEnum::class . '::' . $orientation)) {
+        if (!defined(Orientation::class . '::' . $orientation)) {
             throw new InvalidParameterValueException('Orientation ' . $orientation . ' does not exists.');
         }
         $this->orientation = $orientation;

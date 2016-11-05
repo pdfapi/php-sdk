@@ -8,8 +8,8 @@
 
 namespace PdfApi\Tests;
 
-use PdfApi\Parameter\OrientationEnum;
-use PdfApi\Parameter\SizeEnum;
+use PdfApi\Parameter\Enum\Orientation;
+use PdfApi\Parameter\Enum\Size;
 use PdfApi\PdfApi;
 
 class FacebookTest extends \PHPUnit_Framework_TestCase
@@ -60,7 +60,7 @@ class FacebookTest extends \PHPUnit_Framework_TestCase
 
     public function testCanSetOrientation()
     {
-        $contents = OrientationEnum::Landscape;
+        $contents = Orientation::Landscape;
         $this->api->setOrientation($contents);
         $this->assertEquals($contents, $this->api->getParameters()['orientation']);
     }
@@ -75,7 +75,7 @@ class FacebookTest extends \PHPUnit_Framework_TestCase
 
     public function testCanSetSize()
     {
-        $contents = SizeEnum::A4;
+        $contents = Size::A4;
         $this->api->setSize($contents);
         $this->assertEquals($contents, $this->api->getParameters()['size']);
     }

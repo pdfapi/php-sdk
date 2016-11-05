@@ -6,10 +6,10 @@
  * Time: 11:57
  */
 
-namespace PdfApi\Parameter;
+namespace PdfApi\Parameter\Enum;
 
 
-abstract class OrientationEnum
+abstract class Orientation
 {
     const Portrait = 'Portrait';
     const Landscape = 'Landscape';

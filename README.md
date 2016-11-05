@@ -40,8 +40,8 @@ Note: Be aware that header and footer are separate HTML documents (with styles a
 ```php
 
 use PdfApi\PdfApi;
-use PdfApi\Parameter\OrientationEnum;
-use PdfApi\Parameter\SizeEnum;
+use PdfApi\Parameter\Enum\Orientation;
+use PdfApi\Parameter\Enum\Size;
 
 $template = <<<HTML
 <html>
@@ -73,8 +73,8 @@ $pdfApi = new PdfApi('YOUR_API_KEY');
 $pdfApi->setHtml($template);
 $pdfApi->setHeader($header);
 $pdfApi->setFooter($footer);
-$pdfApi->setSize(SizeEnum::A4);
-$pdfApi->setOrientation(OrientationEnum::Landscape);
+$pdfApi->setSize(Size::A4);
+$pdfApi->setOrientation(Orientation::Landscape);
 
 $rawPdf = $pdfApi->generate();
 

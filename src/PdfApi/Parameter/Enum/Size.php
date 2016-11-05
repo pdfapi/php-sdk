@@ -6,10 +6,10 @@
  * Time: 11:57
  */
 
-namespace PdfApi\Parameter;
+namespace PdfApi\Parameter\Enum;
 
 
-abstract class SizeEnum
+abstract class Size
 {
     const A0 = 'A0';
     const A1 = 'A1';
