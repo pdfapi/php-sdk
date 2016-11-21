@@ -1,6 +1,6 @@
 {
   "name": "pdfapi/php-sdk",
-  "description": "pdfapi.io enables HTML pages that can congtain CSS and JavaScripts to generate beautiful PDF via API",
+  "description": "pdfapi.io enables HTML pages that can contain CSS and JavaScripts to generate beautiful PDF via API",
   "keywords": ["pdfapi.io", "sdk", "php"],
   "type": "library",
   "homepage": "https://github.com/pdfapi/php-sdk",
@@ -18,8 +18,7 @@
   "require-dev": {
     "phpunit/phpunit": "~4.0",
     "mockery/mockery": "~0.9",
-    "guzzlehttp/guzzle": "~6.0",
-    "satooshi/php-coveralls": "~1.0"
+    "satooshi/php-coveralls": "^1.0"
   },
   "autoload": {
     "psr-4": {
