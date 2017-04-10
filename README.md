@@ -21,6 +21,7 @@ Usage of pdfapi.io PHP SDK is very simple. The easyest way to get started is:
 use PdfApi\PdfApi;
 
 $template = <<<HTML
+<!DOCTYPE html>
 <html>
     <body>
         <h1>pdfapi.io makes PDF generation so easy.</h1>
@@ -44,6 +45,7 @@ use PdfApi\Parameter\Enum\Orientation;
 use PdfApi\Parameter\Enum\Size;
 
 $template = <<<HTML
+<!DOCTYPE html>
 <html>
     <body>
         <h1>pdfapi.io makes PDF generation so easy.</h1>
@@ -53,6 +55,7 @@ $template = <<<HTML
 HTML;
 
 $header = <<<HTML
+<!DOCTYPE html>
 <html>
   <body>
       <p>pdfapi.io</p>
@@ -61,6 +64,7 @@ $header = <<<HTML
 HTML;
 
 $footer = <<<HTML
+<!DOCTYPE html>
 <html>
   <body>
       <p>pdfapi.io</p>
